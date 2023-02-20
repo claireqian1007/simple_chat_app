@@ -1,0 +1,69 @@
+@import '../../constants/styles/colors.scss';
+
+.contacts-page {
+  position: relative;
+  width: calc(100vw - 100px);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+
+  .contacts-list {
+    min-height: 100vh;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid $green-5;
+
+    .search-contact-container {
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border: 1px solid $green-5;
+      z-index: 98;
+
+      .ant-input-affix-wrapper {
+        @include input-style;
+        width: 180px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: $gray
+      }
+      input {
+        background-color: transparent;
+      }
+
+      .search-button {
+        margin-left: 10px;
+        background-color: $green-5;
+      }
+    };
+    .contacts-container {
+      width: 100%;
+      overflow-y: auto;
+    }
+  }
+
+  .contacts-list::-webkit-scrollbar {
+    display: none
+  }
+
+  .contacts-detail {
+    position: relative;
+    width: calc(100vw - 380px);
+    min-width: 600px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loading-container {
+    margin-top: 50px;
+  }
+}

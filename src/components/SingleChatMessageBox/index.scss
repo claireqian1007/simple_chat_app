@@ -1,0 +1,45 @@
+@import '../../constants/styles/colors.scss';
+.single-chat-message-box {
+  position: relative;
+  margin-top: 3px;
+  margin-bottom: 8px;
+  width: 96%;
+  min-height: 50px;
+  flex-shrink: 0; // ????
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+
+  .chat-avatar {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  .space {
+    position: relative;
+    width: 15px;
+    height: 100%;
+  }
+
+  .message-content {
+    position: relative;
+    max-width: 280px;
+    white-space: pre-line;
+    word-break: break-all;
+    margin-top: 6px;
+    padding: 8px 15px;
+    background-color: var(--messageBox);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .opposite-message-content {
+    background-color: var(--messageBox);
+  }
+}
+
+.opposite-chat-box {
+  flex-direction: row;
+}

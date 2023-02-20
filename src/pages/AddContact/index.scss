@@ -1,0 +1,27 @@
+@import '../../constants/styles/colors.scss';
+
+.add-contact-container {
+  height: 100vh;
+  text-align: center;
+
+  .ant-input-group {
+    padding-top: 40vh;
+    min-width: 400px
+  }
+
+  .add-contact-input::-webkit-input-placeholder {
+    color: $gray
+  }
+
+  .add-contact-input {
+    width: 300px;
+    background-color: transparent;
+    color: var(--color);
+    border-color: $green-7;
+    text-align: left
+  }
+
+  button {
+    background-color: $green-5;
+  }
+}

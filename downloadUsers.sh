@@ -1,0 +1,1 @@
+firebase auth:export public/data/users.json --project <project-id>

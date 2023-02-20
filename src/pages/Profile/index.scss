@@ -1,0 +1,54 @@
+@import '../../constants/styles/colors.scss';
+
+.form-container {
+  height: 100vh;
+  padding-top: 50px;
+  .ant-spin {
+    position: relative;
+    top: 40%;
+    left: 50%;
+  }
+  .input-field{
+    @include input-style
+  };
+  
+  .ant-select .ant-select-selector{
+    @include input-style;
+  };
+
+
+  .ant-select-selection-placeholder {
+    color: $gray
+  }
+
+  .avatars-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 278px;
+
+    .avatar-image-container {
+      width: 33.33%;
+      box-sizing: border-box;
+      padding: 10px;
+
+      .avatar-style {
+        width: 100%;
+        min-height: 105px;
+        height: auto;
+        box-sizing: border-box;
+
+        &:hover {
+          border: solid 4px $green-7;
+        }
+      };
+      
+      .selected-avatar-style {
+        border: solid 4px $green-7;
+      }
+    }
+  }
+  .submit-btn{
+    background-color: $green-5;
+  }
+}

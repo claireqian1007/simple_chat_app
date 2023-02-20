@@ -1,0 +1,25 @@
+@import '../../constants/styles/colors.scss';
+.chat-page {
+  position: relative;
+  width: calc(100vw - 100px);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  .opened-chat-list {
+    position: relative;
+    min-height: 100vh;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    border-right: 1px solid $green-7;
+  }
+
+  .opened-chat-list::-webkit-scrollbar {
+    display: none
+  }
+  h2 {
+    margin-left: 30px
+  }
+}

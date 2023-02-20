@@ -1,0 +1,82 @@
+@import '../../constants/styles/colors.scss';
+
+.contact-personal-info-container {
+  position: relative;
+  width: 550px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header-part {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    border-bottom: 1px solid;
+    border-color: var(--borderColor);
+
+    .user-name {
+      position: relative;
+      font-size: 32px;
+      font-weight: 600;
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .avatar {
+      position: relative;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .info-part {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .detail-info-container {
+      position: relative;
+      width: 75%;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .info-tag {
+        position: relative;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .info-content {
+        position: relative;
+        font-size: 20px;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .send-message-button {
+    position: relative;
+    background-color: $green-5;
+    margin-top: 30px;
+    width: 170px;
+    height: 40px;
+
+    &:hover {
+      background-color: $green-7
+    }
+  }
+}
